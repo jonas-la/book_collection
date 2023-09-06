@@ -1,8 +1,13 @@
 <h1>Book Collection:</h1>
 
+
+
 <ul>
-<li>Book name</li>
-<li>Second book</li>
+<% @books.each do |book| %>
+<li>
+<%= book.name %>
+</li>
+<% end %>
 </ul>
 
 <%= link_to('Add Book', books_path)%> <br/>

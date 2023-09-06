@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'main/delete'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  resources :books, only: [:index]
+  resources :books, only: [:new, :create]
   resources :delete_books, only: [:index]
   resources :show_details, only: [:index]
   resources :update_books, only: [:index]
