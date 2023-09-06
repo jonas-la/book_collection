@@ -1,0 +1,2 @@
+module DeleteBookHelper
+end
