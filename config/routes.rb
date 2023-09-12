@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'show_details/index'
+  get 'show_details/show'
 
   get 'books/index'
   get 'update_books/index'
@@ -15,7 +17,7 @@ Rails.application.routes.draw do
 
   resources :new_books
   resources :delete_books, only: [:index]
-  resources :show_details, only: [:index]
+  resources :show_details
   resources :update_books, only: [:index]
   
 end
