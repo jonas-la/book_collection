@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'books/index'
   get 'update_books/index'
   get 'delete_books/index'
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
   get 'main/delete'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  resources :books, only: [:index]
+  resources :new_books
   resources :delete_books, only: [:index]
   resources :show_details, only: [:index]
   resources :update_books, only: [:index]
