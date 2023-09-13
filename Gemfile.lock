@@ -236,6 +236,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bundler (~> 2.0)
   capybara
   debug
   importmap-rails
