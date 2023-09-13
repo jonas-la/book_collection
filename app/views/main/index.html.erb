@@ -1,0 +1,25 @@
+<h1>Book Collection:</h1>
+
+
+<ul>
+<% @books.each do |book| %>
+<li>
+<%= link_to(book.title, main_path(book), class: 'action show' ) %>
+</li> 
+<%= link_to('Edit', edit_main_path(book))%>
+<br/>
+<%= link_to('Delete', delete_main_path(book))%>
+<br/>
+<br/>
+<br/>
+<% end %>
+</ul> 
+
+<%= link_to('Add Book', new_main_path)%> <br/>
+<%
+=begin%>
+ <%= link_to('Show details', show_show_detail_path)%> <br/> 
+<%
+=end%>
+
+<%= link_to('Delete Books', delete_books_path)%> <br/>
