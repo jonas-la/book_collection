@@ -8,4 +8,4 @@
 
     # Book.create!
 
-    # books = Book.create([{ title: "LOTR", author: "Tolkien" }])
+    books = Book.create([{ title: "LOTR", author: "Tolkien" }])
