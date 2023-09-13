@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get :delete
     end
   end
+  
 
   resources :new_books
   resources :delete_books, only: [:index]
