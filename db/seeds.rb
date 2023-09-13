@@ -7,3 +7,5 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
     # Book.create!
+
+    # books = Book.create([{ title: "LOTR", author: "Tolkien" }])
