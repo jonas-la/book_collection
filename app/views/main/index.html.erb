@@ -4,12 +4,19 @@
 <ul>
 <% @books.each do |book| %>
 <li>
-<%= book.title %>
-</li>
+<%= link_to(book.title, main_path(book), class: 'action show' ) %>
+</li> 
+<%= link_to('Edit', edit_main_path(book))%>
+<br/>
+<br/>
 <% end %>
 </ul> 
 
-<%= link_to('Add Book', new_new_book_path)%> <br/>
-<%= link_to('Show details', show_show_detail_path)%> <br/>
-<%= link_to('Update Books', update_books_path)%> <br/>
+<%= link_to('Add Book', new_main_path)%> <br/>
+<%
+=begin%>
+ <%= link_to('Show details', show_show_detail_path)%> <br/> 
+<%
+=end%>
+
 <%= link_to('Delete Books', delete_books_path)%> <br/>

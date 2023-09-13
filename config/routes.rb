@@ -1,20 +1,11 @@
 Rails.application.routes.draw do
-  get 'show_details/index'
-  get 'show_details/show'
-
-  get 'books/index'
-  get 'update_books/index'
-  get 'delete_books/index'
+ 
   # Defines the root path route ("/")
   root "main#index"
-  get 'show_details/index'
-  get 'main/index'
-  get 'main/create'
-  get 'main/read'
-  get 'main/update'
-  get 'main/delete'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
+  resources :main
   resources :new_books
   resources :delete_books, only: [:index]
   resources :show_details

@@ -1,0 +1,6 @@
+<%= link_to 'Home', root_path %>
+<h1>Edit Book</h1>
+
+<%= form_with(model: @book, url: main_path(@book), method: :patch) do |f| %>
+  <%= render(partial: "form", locals: {f: f, buttonText: "Edit Book"}) %>
+<% end %>
